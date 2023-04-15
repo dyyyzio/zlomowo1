@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" >
+    <title>Złomowo</title>
+    <link rel="stylesheet" href="styl1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="zdj/2zlomlogo.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="zdj/logofirmy.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">STRONA GŁOWNA</a></li>
+                    <li><a href="Kontakt.html">ZŁÓŻ ZAMÓWIENIE</a></li>
+                    <li><a href="Cennik.html">CENNIK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div>
+            <div class="cennik">
+                <i class="list">CENNIK ZŁOMOWA</i><br><br>
+                <div class="Cennik1">
+                    <p class="nazwa">MIEDŹ</p>
+                    <img src="zdj/miedz3.jpg" alt="Miedz">
+                    <p class="opis">Miedź czysta jak złoto</p>
+                    <p class="Cena">Kilogram miedźi = 30zł</p>
+                </div>
+                <div class="Cennik1">
+                    <p class="nazwa">METAL</p>
+                    <img src="zdj/metal.jpg" alt="metal">
+                    <p class="opis">Metal twardy jak kamienie</p>
+                    <p class="Cena"> 1 kg Metalowych rzeczy za 15zł </p>
+                </div>
+                <div class="Cennik1">
+                    <p class="nazwa">GRUZ</p>
+                    <img src="zdj/GRUZ.jpeg" alt="Gruz">
+                    <p class="opis">Gruz jak Gruz</p>
+                    <p class="Cena">Gruz 1 m 3 już za jedyne 20zł</p>
+                </div>
+                <div class="Cennik1">
+                    <p class="nazwa">RTV I AGD</p>
+                    <img src="zdj/rtv.jpg" alt="RTV I AGD">
+                    <p class="opis">Prawie jak nowa</p>
+                    <p class="Cena">Cena za 1kg 35zł</p>
+                </div>
+
+        </div>
+     </section>
+
+
+<!--------JavaScript for Toggle Menu--------> 
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

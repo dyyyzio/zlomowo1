@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" >
+    <title>Złomowo</title>
+    <link rel="stylesheet" href="styl1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="zdj/2zlomlogo.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="zdj/logofirmy.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">STRONA GŁOWNA</a></li>
+                    <li><a href="Kontakt.html">ZŁÓŻ ZAMÓWIENIE</a></li>
+                    <li><a href="Cennik.html">CENNIK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="formularz">
+            <form action="mailto:kowalikjan751@gmail.com" method="post" enctype="text/plain"><div>
+
+                <!-- Podstawowe pole tekstowe -->
+                <input name="Imię">Podaj swoje imię<br>
+                <input name="Nazwisko">Podaj swoje nazwisko<br>
+
+                <!-- Podstawowe pole tekstowe -->
+                <input name="Miejscowosc">Podaj swoją miejscowość<br>
+                <input name="adres">Podaj swój adres zamieszkania
+
+                <!-- Pole typu RADIO -->
+                <p>Podaj swoją płeć:</p>
+                <input type="radio" name="Płeć" value="Kobieta">Kobieta
+                <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+
+                <!-- Pole typu RADIO -->
+                <p>Ile masz lat?</p>
+                <input type="radio" name="Wiek" value="mniej niż 18">mniej niż 18<br>
+                <input type="radio" name="Wiek" value="wiecej niż 18">wiecej niż 18<br>
+
+                <!-- Pole typu CHECKBOX -->
+                <p>Co zamierzasz kupić?</p>
+                <input type="radio" name="Zakup" value="Miedz">Miedź<br>
+                <input type="radio" name="Zakup" value="Rtv i agd">RTV i AGD<br>
+                <input type="radio" name="Zakup" value="Gruz">Gruz<br>
+                <input type="radio" name="Zakup" value="Metal">Metal<br>
+
+                <!-- Lista rozwijalna (typ podstawowy) z zaznaczoną opcją domyślną -->
+                <p>W jakim województwie mieszkasz?</p>
+                <select name="województwo">
+                    <option selected>Dolnośląskie</option>
+                    <option>Kujawsko-Pomorskie</option>
+                    <option>Lubelskie</option>
+                    <option>lubuskie</option>
+                    <option>Łódzkie</option>
+                    <option>Małopolskie</option>
+                    <option>Mazowieckie</option>
+                    <option>Opolskie</option>
+                    <option>Podkarpackie</option>
+                    <option>Podlaskie</option>
+                    <option>Pomorskie</option>
+                    <option>Śląskie</option>
+                    <option>Świętokrzyskie</option>
+                    <option>Warmińsko-mazurskie</option>
+                    <option>Wielkopolskie</option>
+                    <option>Zachodniopomorskie</option>
+
+                </select>
+
+                <!-- Lista rozwijalna (typ rozszerzony) z zaznaczoną opcją domyślną i zmniejszoną wysokością -->
+                <p>Ile kilogramów chcesz kupic?</p>
+                <select name="Waga" multiple size="3">
+                    <option selected>1KG</option>
+                    <option>2KG</option>
+                    <option>3KG</option>
+                    <option>4KG</option>
+                    <option>5KG</option>
+                    <option>6KG</option>
+                    <option>7KG</option>
+                    <option>8KG</option>
+                    <option>9KG</option>
+                    <option>10KG</option>
+                    <option>20KG</option>
+                    <option>30KG</option>
+                    <option>50KG</option>
+                    <option>75KG</option>
+                    <option>100KG</option>
+                    <option>250KG</option>
+                    <option>500KG</option>
+                    <option>750KG</option>
+                    <option>1000KG</option>
+                </select>
+
+                <!-- Pole komentarza (o powiększonych rozmiarach oraz z tekstem domyślnym) -->
+                <p>Napisz jakieś uwagi(opcjonalnie)</p>
+                <textarea name="uwagi" cols="50" rows="10">Proszę, wpisz tutaj jakieś uwagi...</textarea>
+                <br><br>
+
+                <!-- Przycisk WYŚLIJ -->
+                <input type="submit" value="Wyślij zamowienie">
+                <!-- Przycisk WYCZYŚĆ DANE -->
+                <input type="reset" value="Wyczyść dane">
+                
+                </div></form>
+
+        </div>
+     </section>
+
+
+<!--------JavaScript for Toggle Menu--------> 
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" >
+    <title>Złomowo</title>
+    <link rel="stylesheet" href="styl1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="zdj/2zlomlogo.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="zdj/logofirmy.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">STRONA GŁOWNA</a></li>
+                    <li><a href="Kontakt.html">ZŁÓŻ ZAMÓWIENIE</a></li>
+                    <li><a href="Cennik.html">CENNIK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Najlepsze Złomowisko W Polsce</h1>
+            <p>Dlaczego nazywamy sie najlepszym? Gdzie znajduje sie nasze złomowisko? Ile kosztuje miedź?<br>Na te i inne pytania znajdziesz odpowiedz na tej stronie.</p>
+            <a href="O Firmie.html" class="hero-btn">Dowiedz sie wiecej</a>
+
+
+        </div>
+     </section>
+
+
+<!--------JavaScript for Toggle Menu--------> 
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+
+
+</body>
+
+</html>
